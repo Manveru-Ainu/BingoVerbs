@@ -1943,6 +1943,7 @@ resetCaller();
 </div>
 
 
+<script>
 // ── CONFIRM BEFORE LEAVING ──
 window.addEventListener('beforeunload', function(e) {
   if (document.getElementById('app').classList.contains('on')) {
@@ -1966,6 +1967,7 @@ window.addEventListener('popstate', function(e) {
 window.addEventListener('load', function() {
   history.pushState(null, '', window.location.href);
 });
+</script>
 
 </body>
 </html>
